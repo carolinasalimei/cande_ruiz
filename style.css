@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 * {
      margin: 0;
      padding: 0;
+     color: black;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
 }
 
 
@@ -19,18 +24,19 @@ html {
 }
 
 
+
 header {
      display: flex;
      justify-content: space-around;
      align-items: center;
-     padding: 10px 5px 10px;
-     background: linear-gradient(90deg, rgba(121, 118, 172, 0.2) 100%, rgba(55, 67, 94, 0.2) 53%, rgba(0, 212, 255, 0.2) 100%)
+
+
 }
 
 .logo {
-     width: 5%;
+     width: 6%;
      border-radius: 100%;
-     margin-right: 30vw;
+     margin-right: 40vw;
 
 
 
@@ -41,6 +47,7 @@ header {
 a {
      text-decoration: none;
      color: black;
+     text-transform: capitalize;
 }
 
 nav>a {
@@ -51,6 +58,29 @@ nav>a {
 
 nav>a:hover {
      background-color: slategray;
+}
+
+.left .content .social {
+     margin: 50px 0 0 0;
+}
+
+.left .content .social a {
+     padding: 0 2px;
+}
+
+.content .social {
+     height: 100px;
+     width: 100px;
+
+     line-height: 100px;
+     text-align: center;
+     font-size: 40px;
+     border-radius: 5px;
+     transition: 0.3s;
+}
+
+.content .social :hover {
+     background: grey;
 }
 
 .hamburguesa {
@@ -85,6 +115,24 @@ nav>a:hover {
      }
 }
 
+.content1 {
+     position: relative;
+     margin: 130px auto;
+     text-align: center;
+     padding: 0 20px;
+}
+
+.content1 .text {
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: black;
+}
+
+.content1 .p {
+     font-size: 2.1875rem;
+     font-weight: 600;
+     color: black;
+}
 
 .contenedorHero {
      display: flex;
@@ -205,17 +253,10 @@ span {
      padding-bottom: 3.5rem;
 }
 
-.contenedorServicios {
-     display: flex;
+.contenedorBoda {
 
-     width: 70%;
-
-
-
-}
-
-.contenedorTextoServicios {
-     margin-left: 1rem;
+     width: 500px;
+     height: 100vh;
 }
 
 .colorIcon {
@@ -246,36 +287,203 @@ img {
 }
 
 .contact {
-     flex-wrap: wrap;
-     background-color: #ecf0f1;
 
      width: 100%;
      height: 90vh;
 }
 
-form {
-     display: flex;
-     flex-direction: column;
-}
-
-
 footer {
 
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-
-     bottom: 10px;
-
+     bottom: 0px;
+     width: 100%;
 
 }
 
 .logo1 {
-     width: 20%;
-     margin-left: 300px;
      border-radius: 100%;
+     width: 70%;
+}
+
+.main-content {
+     display: flex;
+}
+
+.main-content .box {
+     flex-basis: 50%;
+     padding: 10px 20px;
+}
+
+.box h2 {
+     font-size: 1.125rem;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+
+.box .content {
+     margin: 20px 0 0 0;
+     position: relative;
+}
+
+.box .content:before {
+     position: absolute;
+     content: '';
+     top: -10px;
+     height: 2px;
+     width: 100%;
 
 }
+
+.box .content:after {
+     position: absolute;
+     content: '';
+     height: 2px;
+     width: 15%;
+
+     top: -10px;
+}
+
+
+
+.left .content .social {
+     margin: 50px 0 0 0;
+}
+
+.left .content .social a {
+     padding: 0 2px;
+}
+
+.left .content .social {
+     height: 100px;
+     width: 100px;
+
+     line-height: 100px;
+     text-align: center;
+     font-size: 40px;
+     border-radius: 5px;
+     transition: 0.3s;
+}
+
+.left .content .social :hover {
+     background: grey;
+}
+
+.center .content .fas {
+     font-size: 4rem;
+
+
+     height: 45px;
+     width: 45px;
+     line-height: 45px;
+     text-align: center;
+     border-radius: 50%;
+     transition: 0.3s;
+     cursor: pointer;
+}
+
+
+
+.center .content .text {
+     font-size: 1.0625rem;
+     font-weight: 500;
+     padding-left: 10px;
+}
+
+.center .content .phone {
+     margin: 15px 0;
+}
+
+.right form .text {
+     font-size: 1.0625rem;
+     margin-bottom: 2px;
+     color: black;
+}
+
+.right form .msg {
+     margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+     width: 100%;
+     font-size: 1.0625rem;
+
+     padding-left: 10px;
+
+}
+
+.right form input:focus,
+.right form textarea:focus {
+     outline-color: red;
+}
+
+.right form input {
+     height: 35px;
+}
+
+.right form .btn {
+     margin-top: 10px;
+}
+
+.right form .btn button {
+     height: 40px;
+     width: 100%;
+     border: none;
+     outline: none;
+     background: silver;
+     font-size: 1.0625rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: .3s;
+}
+
+.right form .btn button:hover {
+     background: gray;
+}
+
+.bottom center {
+     padding: 5px;
+     font-size: 0.9375rem;
+
+}
+
+.bottom center span {
+     color: #656565;
+}
+
+
+.bottom center a:hover {
+     text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+     footer {
+          position: relative;
+          bottom: 0px;
+     }
+
+     .main-content {
+          flex-wrap: wrap;
+          flex-direction: column;
+     }
+
+     .main-content .box {
+          margin: none;
+     }
+}
+
+
+/*****Eliminar border por defecto de un botton */
+input {
+     border: none;
+     outline: none;
+}
+
+textarea {
+     outline: none;
+     outline: none;
+}
+
+/*********/
 
 
 
