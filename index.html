@@ -49,8 +49,10 @@
 
                               <div class="social">
 
-                                   <a href="#"><i class="bi bi-facebook"></i></a>
-                                   <a href="#"><i class="bi bi-instagram"></i></a>
+                                   <a href="https://www.facebook.com/CandelariaRuizPhotography"><i
+                                             class="bi bi-facebook"></i></a>
+                                   <a href="https://www.instagram.com/candelariaruizph/"><i
+                                             class="bi bi-instagram"></i></a>
 
                               </div>
 
@@ -227,51 +229,51 @@
                                    <div class="social">
 
 
-                                        <a href="#"><i class="bi bi-facebook"></i></a>
-                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="https://www.facebook.com/CandelariaRuizPhotography"><i
+                                                  class="bi bi-facebook"></i></a>
+                                        <a href="https://www.instagram.com/candelariaruizph/"><i
+                                                  class="bi bi-instagram"></i></a>
 
                                    </div>
                               </div>
                          </div>
 
-                         <div class="center box">
-                              <h2>Ubicación</h2>
+                         <div class="centerBox">
+
                               <div class="content">
-                                   <div class="place">
-                                        <span class="fas fa-map-marker-alt"></span>
-                                        <span class="text">Buenos Aires, Argentina</span>
+                                   <div class="place">Buenos Aires, Argentina
                                    </div>
                                    <div class="phone">
-                                        <span class="fas fa-phone-alt"></span>
-                                        <span class="text">+54 911-6980-8616</span>
+                                        +54 911-6980-8616
                                    </div>
                                    <div class="email">
-                                        <span class="fas fa-envelope"></span>
-                                        <span class="text">candelariafotografia1@gmail.com</span>
+                                        candelariafotografia1@gmail.com
                                    </div>
                               </div>
                          </div>
 
                          <div class="right box">
-                              <h2>Contacto</h2>
+
                               <div class="content">
-                                   <form action="#">
-                                        <div class="usuario">
-                                             <div class="text">Nombre y Apellido *</div>
-                                             <input type="usuario" required>
+                                   <form id="form" action="" class="form">
+                                        <div class="nombre">
+                                             <label for="name">Nombre y Apellido </label>
+                                             <input type="text" id="name" name="name" required>
                                         </div>
                                         <div class="email">
-                                             <div class="text">Email *</div>
-                                             <input type="email" required>
+                                             <label for="email">Email </label>
+                                             <input type="email" id="email" name="email" required>
                                         </div>
                                         <div class="msg">
-                                             <div class="text">Mensaje *</div>
-                                             <textarea rows="2" cols="25" required></textarea>
+                                             <label for="message">Mensaje </label>
+                                             <textarea id="message" name="message" rows="2" cols="25"
+                                                  required></textarea>
                                         </div>
                                         <div class="btn">
-                                             <button type="submit">Enviar Mensaje</button>
+                                             <button type="submit" value="submit">Enviar</button>
                                         </div>
                                    </form>
+                                   <a href="mailto:caroruizsalimei@gmail.com" id="trucazo"></a>
                                    <a href="#"> <button class="btnAbout">Top</button></a>
           </section>
 
@@ -279,7 +281,19 @@
 
           </main>
 
+          <script>
+               const $form = document.querySelector('#form')
+               const $buttonMailto = document.querySelector('#trucazo')
 
+               $form.addEventListener('submit', handleSubmit)
+
+               function handleSubmit(event) {
+                    event.preventDefault()
+                    const form = new FormData(this)
+                    $buttonMailto.setAttribute('href', `mailto:caroruizsalimei@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+                    $buttonMailto.click()
+               }
+          </script>
 
      </body>
 
