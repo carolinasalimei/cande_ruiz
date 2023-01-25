@@ -26,7 +26,7 @@ html {
 
 
 header {
-     background-color: #2f3640;
+
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -37,6 +37,8 @@ header {
 
 .logo {
 
+
+     display: flex;
      width: 10%;
      border-radius: 100%;
      margin-right: 40vw;
@@ -48,6 +50,7 @@ header {
 }
 
 a {
+
      text-decoration: none;
      color: silver;
      text-transform: capitalize;
@@ -90,10 +93,9 @@ nav>a:hover {
 }
 
 .hamburguesa {
-     color: black;
      display: none;
-     cursor: pointer;
-     font-size: 32px;
+
+
 
 }
 
@@ -126,7 +128,7 @@ nav>a:hover {
      align-items: center;
      justify-content: center;
      height: 100vh;
-     background: linear-gradient(90deg, rgba(121, 118, 172, 0.2) 100%, rgba(55, 67, 94, 0.2) 53%, rgba(0, 212, 255, 0.2) 100%),
+     background:
           url(./Imagenes/Diseño\ sin\ título.png);
      background-size: 150rem;
      background-position: center;
@@ -269,7 +271,7 @@ img {
      background-color: #f1f2f6;
 
      width: 100%;
-     height: 100vh;
+     height: 90vh;
 }
 
 footer {
@@ -437,15 +439,22 @@ footer {
 
 @media(max-width:500px) {
 
-     nav,
+
+
+     /* nav,
      div {
+          visibility: hidden;
           display: none;
+
      }
 
      .hamburguesa {
+
           display: block;
-          color: black;
-     }
+          color: silver;
+          cursor: pointer;
+          font-size: 55px;
+     }*/
 
      header {
           flex-direction: column;
@@ -460,69 +469,69 @@ footer {
           display: contents;
      }
 
-     .weddings {}
+}
 
-     .portfolio {
-          display: flex;
+.portfolio {
+     display: flex;
 
 
+}
+
+@media screen and (max-width: 500px) {
+     footer {
+
+
+          position: relative;
+          bottom: 0px;
      }
 
-     @media screen and (min-width: 500px) {
-          footer {
-
-
-               position: relative;
-               bottom: 0px;
-          }
-
-          .main-content {
-               flex-wrap: wrap;
-               flex-direction: column;
-          }
-
-          .main-content .box {
-               margin: none;
-          }
-
+     .main-content {
+          flex-wrap: wrap;
+          flex-direction: column;
      }
 
-
-     @media screen and (max-width: 900px) {
-          footer {
-               position: relative;
-               bottom: 0px;
-          }
-
-          .main-content {
-               flex-wrap: wrap;
-               flex-direction: column;
-          }
-
-          .main-content .box {
-               margin: none;
-          }
+     .main-content .box {
+          margin: none;
      }
 
+}
 
-     /*****Eliminar border por defecto de un botton */
-     input {
-          border: none;
-          outline: none;
+
+@media screen and (max-width: 900px) {
+     footer {
+          position: relative;
+          bottom: 0px;
      }
 
-     textarea {
-          outline: none;
-          outline: none;
+     .main-content {
+          flex-wrap: wrap;
+          flex-direction: column;
      }
 
-     /*********/
-
-
-
-
-     @media (orientation: landscape) {
-          .custom-background:after {
-               height: calc(100vw * 3 / 4);
-          }
+     .main-content .box {
+          margin: none;
      }
+}
+
+
+/*****Eliminar border por defecto de un botton */
+input {
+     border: none;
+     outline: none;
+}
+
+textarea {
+     outline: none;
+     outline: none;
+}
+
+/*********/
+
+
+
+
+@media (orientation: landscape) {
+     .custom-background:after {
+          height: calc(100vw * 3 / 4);
+     }
+}
