@@ -32,11 +32,12 @@ header {
      align-items: center;
 
 
+
 }
 
 .logo {
 
-     width: 6%;
+     width: 10%;
      border-radius: 100%;
      margin-right: 40vw;
 
@@ -53,6 +54,8 @@ a {
 }
 
 nav>a {
+     color: silver;
+
 
      margin-left: 15px;
 
@@ -96,7 +99,7 @@ nav>a:hover {
 
 
 
-@media(max-width:500px) {
+@media(min-width:500px) {
 
      nav,
      div {
@@ -224,13 +227,13 @@ p {
 
 }
 
+.weddings {
 
-
-.bodasImagen {
-
-     width: 30%;
-     padding-left: 700px;
+     width: 50%;
 }
+
+
+
 
 .btnAbout {
      background-color: #2f3640;
