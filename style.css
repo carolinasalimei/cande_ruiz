@@ -26,6 +26,7 @@ html {
 
 
 header {
+     background-color: slategrey;
 
      display: flex;
      justify-content: space-around;
@@ -128,8 +129,7 @@ nav>a:hover {
      align-items: center;
      justify-content: center;
      height: 100vh;
-     background:
-          url(./Imagenes/Diseño\ sin\ título.png);
+     background: url(./Imagenes/acantilado.jpeg);
      background-size: 150rem;
      background-position: center;
 
