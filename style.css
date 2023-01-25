@@ -99,27 +99,7 @@ nav>a:hover {
 
 
 
-@media(min-width:500px) {
 
-     nav,
-     div {
-          display: none;
-     }
-
-     .hamburguesa {
-          display: block;
-          color: black;
-     }
-
-     header {
-          flex-direction: column;
-     }
-
-     nav {
-          display: flex;
-          flex-direction: column;
-     }
-}
 
 .content1 {
      position: relative;
@@ -229,7 +209,7 @@ p {
 
 .weddings {
 
-     width: 50%;
+     width: 60%;
 }
 
 
@@ -289,7 +269,7 @@ img {
      background-color: #f1f2f6;
 
      width: 100%;
-     height: 90vh;
+     height: 100vh;
 }
 
 footer {
@@ -455,41 +435,94 @@ footer {
      text-decoration: underline;
 }
 
-@media screen and (max-width: 900px) {
-     footer {
-          position: relative;
-          bottom: 0px;
+@media(max-width:500px) {
+
+     nav,
+     div {
+          display: none;
      }
 
-     .main-content {
-          flex-wrap: wrap;
+     .hamburguesa {
+          display: block;
+          color: black;
+     }
+
+     header {
           flex-direction: column;
      }
 
-     .main-content .box {
-          margin: none;
+     nav {
+          display: flex;
+          flex-direction: column;
      }
-}
 
-
-/*****Eliminar border por defecto de un botton */
-input {
-     border: none;
-     outline: none;
-}
-
-textarea {
-     outline: none;
-     outline: none;
-}
-
-/*********/
-
-
-
-
-@media (orientation: landscape) {
-     .custom-background:after {
-          height: calc(100vw * 3 / 4);
+     .ContenedorTextoAbout {
+          display: contents;
      }
-}
+
+     .weddings {}
+
+     .portfolio {
+          display: flex;
+
+
+     }
+
+     @media screen and (min-width: 500px) {
+          footer {
+
+
+               position: relative;
+               bottom: 0px;
+          }
+
+          .main-content {
+               flex-wrap: wrap;
+               flex-direction: column;
+          }
+
+          .main-content .box {
+               margin: none;
+          }
+
+     }
+
+
+     @media screen and (max-width: 900px) {
+          footer {
+               position: relative;
+               bottom: 0px;
+          }
+
+          .main-content {
+               flex-wrap: wrap;
+               flex-direction: column;
+          }
+
+          .main-content .box {
+               margin: none;
+          }
+     }
+
+
+     /*****Eliminar border por defecto de un botton */
+     input {
+          border: none;
+          outline: none;
+     }
+
+     textarea {
+          outline: none;
+          outline: none;
+     }
+
+     /*********/
+
+
+
+
+     @media (orientation: landscape) {
+          .custom-background:after {
+               height: calc(100vw * 3 / 4);
+          }
+     }
